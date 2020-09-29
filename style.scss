@@ -1,0 +1,17 @@
+$colors: (
+  primary: #45a29e,
+  primary-light: #66fcf1,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; //50% on iphone
+  //px's are for monkeys, rem=relative units, 1rem=10px, vh=viewport height or vw=viewport width 95vw---95% of screen width
+}
